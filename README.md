@@ -24,3 +24,29 @@
  - 비즈니스 로직
  - 확장과 성능을 고려한 개발
   
+##API
+
+| 분류 | 기능 | 조건 | URI(API) | Method | 
+|:---|:--- |:----|:----|:----|
+| 유저관리 | 회원가입 | 없음 | /user | POST |
+| 유저관리 | 회원탈퇴 | 없음 | /user | DELETE |
+| 유저관리 | 로그인 | 없음 | /users/login | POST |
+| 유저관리 | 로그아웃 | 없음 | /users/logout | POST |
+| 공지사항 | 전체조회 | 관리자 | /noticeboards/ | GET 
+| 공지사항 | 작성 | 관리자 | /noticeboar\s/ | POST |
+| 공지사항 | 수정 | 관리자 | /noticeboards/ | PUT |
+| 공지사항 | 삭제 | 없음 | /noticeboards/ | DELETE |
+| 자유게시판 | 전체조회| 관리자, 골드, 실버 | /generalboards/ | GET |
+| 자유게시판 | 작성 | 관리자, 골드, 실버 |/generalboards/ | POST |
+| 자유게시판 | 수정 | 관리자, 골드, 실버 | /generalboards/ | PUT |
+| 자유게시판 | 삭제 | 관리자, 골드, 실버 | /generalboards/ | DELETE |
+| 운영게시판 | 전체조회 | 관리자, 골드, 실버 | /operationboards/ | GET |
+| 운영게시판 | 작성 | 관리자, 골드 | /operationboards/ | POST |
+| 운영게시판 | 수정 | 관리자, 골드 | /operationboards/ | PUT |
+| 운영게시판 | 삭제 | 관리자, 골드 | /operationboards/ | DELETE |
+| 통계 | 전체통계(모든 사용자 조회) | 관리자 | /users/login | GET |
+| 통계 | 성별 통계 | 관리자 |/stastics/  GET|
+| 통계 | 나이 통계 | 관리자 | /stastics/ages | GET |
+| 통계 | 접속시간 통계 | 관리자 | /stastics/connect | GET|
+
+
